@@ -1,8 +1,3 @@
-### Creds Found
-
-R1ckRul3s:Wubbalubbadubdub
-
-
 ### Walkthrough
 
 - Ran nmap
@@ -26,3 +21,9 @@ R1ckRul3s:Wubbalubbadubdub
 - Couldn't find 3rd so tried to run `sudo -l`, found out can ran anything with sudo
 - Last possible place a flag could be was "/root"
 - Found last ingredient in "/root/3rd.txt"
+
+
+
+### Creds Found
+
+R1ckRul3s:Wubbalubbadubdub
