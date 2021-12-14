@@ -1,4 +1,14 @@
-### Walkthrough
+# PickleRick Machine
+
+## Progress
+
+- [x] Challenge Completed
+
+---
+
+## Walkthrough
+
+### Enumeration
 
 - Ran nmap
 - Ran gobuster
@@ -8,6 +18,9 @@
 - Found "/login.php" through gobuster
 - Have username, no password
 - Found "/robots.txt" with text "Wubbalubbadubdub", could be pasword
+
+### Exploitation
+
 - Tried in SSH no luck, in web, Voila!!!
 - After logging in, it shows panel where we can execute command
 - Tried `ls` to see list of files
@@ -22,8 +35,10 @@
 - Last possible place a flag could be was "/root"
 - Found last ingredient in "/root/3rd.txt"
 
+---
 
+## Creds Found
 
-### Creds Found
-
-R1ckRul3s:Wubbalubbadubdub
+| Username | Password | Type |
+|--------|------|---------|
+|R1ckRul3s | Wubbalubbadubdub | Web |

@@ -9,12 +9,17 @@
 
 ## Walkthrough
 
+### Enumeration
+
 - Ran nmap, found 22,80 open ( nmap/nmap_init.nmap & nmap/nmap_all_ports.nmap )
 - Read source code - Found out used Ceaser cipher in passwords
 - Gobuster found /admin
 - Tried using common pairs, didn't work
 - Source code - using API for authentications
 - Source code - "Incorrect Credentials" if wrong creds, token set if right creds
+
+### Exploitation
+
 - Ran burpsuite and intercepted the request
 - Enabled intercept response too
 - In response, removed "Incorrect Credentials" and set Token to "admin"
@@ -39,10 +44,7 @@
 
 ## Credentials
 
-### ssh
-
-- james:james13
-
-### user
-
-- james:saydrawnlyingpicture
+| Username | Password | Type |
+|----|----|----|
+| james | james13 | SSH |
+| james | saydrawnlyingpicture | System |

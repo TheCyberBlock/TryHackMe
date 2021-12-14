@@ -9,11 +9,16 @@
 
 ## Walkthrough
 
+### Enumeration
+
 - Ran basic nmap scan `nmap <IP>`
 - Found 9 ports open
 - Netbios/Samba running on 139,445
 - It's called blue and samba is running so it might be vulnerable to "EternalBlue"
 - Checked for "EternalBlue" (ms17-010), Found vulnerable
+
+### Exploitation
+
 - Metasploit has module for EternalBlue so fired up `msfconsole`
 - Searched "EternalBlue", found exploit `exploit/windows/smb/ms17_010_eternalblue`
 - Ran `check` to confirm the target is vulnerable and it was
@@ -27,9 +32,7 @@
 - Found 2nd flag, do `cat c:/Windows/System32/config/flag2.txt` to see flag
 - Found 3rd flag, do `cat c:/Users/Jon/Documents/flag3.txt` to see flag 
 
----
-
-## Extras
+### Extras
 
 - Ran `hashdump` to see password hashes
 - Copied all hashes to a file
